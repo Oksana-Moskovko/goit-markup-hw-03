@@ -93,8 +93,6 @@ a {
 }
 .footer-logo .logo-part {
   color: #F4F4FD;
-  display: inline-block;
-  margin-bottom: 16px; 
 }
 
 .nav-link {
@@ -181,7 +179,6 @@ a {
 .section-list {
   display: flex;
   gap: 24px;
-  
 }
 
 .content-section {
@@ -311,7 +308,13 @@ a {
   padding-bottom: 100px;
 }
 
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
 .footer-copyright {
   color: #F4F4FD; 
   width: 264px;
 }
+ 
