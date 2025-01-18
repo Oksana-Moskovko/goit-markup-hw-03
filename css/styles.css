@@ -86,13 +86,15 @@ a {
 
 .header-logo {
   padding: 24px 0;
-  margin-right: 74px;
+  margin-right: 76px;
 }
 .header-logo .logo-part {
   color: #2e2f42;
 }
 .footer-logo .logo-part {
   color: #F4F4FD;
+  display: inline-block;
+  margin-bottom: 16px; 
 }
 
 .nav-link {
@@ -130,23 +132,23 @@ a {
   letter-spacing: 0.02em;
 }
 
+/* main page */
+
 .main-page {
   background-color: #2E2F42;
+  padding: 188px 0;
 }
- .container-page {
-  padding-top: 188px;
-  padding-bottom: 48px;
-  width: 496px;
-  margin: 0 auto;
- }
- 
+
 .page-title {
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
+  margin: 0 auto;
   color: #FFFFFF;
+  padding-bottom: 48px;
+  max-width: 496px;
 }
 
 /*button*/
@@ -161,12 +163,12 @@ a {
   display: block;
   margin: 0 auto; 
   padding: 16px 32px;
-}
-
-.button {
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none; 
   border-radius: 4px;
-  padding-bottom: 188px;
-}
+} 
 
 .btn-primary:hover,
 .btn-primary:focus {
@@ -179,12 +181,19 @@ a {
 .section-list {
   display: flex;
   gap: 24px;
+  
+}
+
+.content-section {
   padding: 120px 0;
-  width: calc((100% - 72) / 4);
 }
 
 .retreat {
   margin-bottom: 8px;
+}
+
+.section-item {
+  width: calc((100% - 72px) / 4);
 }
 
 .title-benefits {
@@ -205,23 +214,23 @@ a {
 
 /*our-team 3*/
 .team-title {
-  padding-top: 120px;
   margin-bottom: 72px;
 }
 
 .section-list-team {
   display: flex;
   gap: 24px;
-  padding-bottom: 120px;
-  width: calc((100% - 72px ) / 4);
 }
+
 .our-team {
   background-color: #F4F4FD ;
+  padding: 120px 0;
 }
 
 .our-team-list {
   display: block;
   border-radius: 0 0 4px 4px;
+  width: calc((100% - 72px ) / 4);
   background-color: #FFFF;
 }
 
@@ -248,18 +257,25 @@ a {
 }
 
 .card-content {
-  padding: 32px 16px;
+  padding: 32px 0;
   text-align: center;
 }
 
 
-/* section4 Our Portfolio*/
+/* section 4 Our Portfolio*/
+.section-our-portfolio {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 .our-portfolio {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px 48px;
+  column-gap: 24px;
+  row-gap: 48px; 
+}
+
+.project-card {
   width: calc(( 100% - 48px ) / 3);
-  padding-bottom: 120px;
 }
 
 .card-content-project {
@@ -288,14 +304,11 @@ a {
 
 /* footer */
 
-.footer-cotainer {
-  padding-top:  100px;
-  padding-bottom: 100px;
-}
-
 .footer {
   background-color:  #2E2F42;
   padding-bottom: 8px;
+  padding-top:  100px;
+  padding-bottom: 100px;
 }
 
 .footer-copyright {
