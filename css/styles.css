@@ -16,7 +16,13 @@ h5,
 h6 {
   margin: 0;
 }
-  
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .visually-hidden {    
   position: absolute;
   width: 1px;  
@@ -154,9 +160,11 @@ a {
   color: #FFFFFF;
   display: block;
   margin: 0 auto; 
+  padding: 16px 32px;
 }
 
 .button {
+  border-radius: 4px;
   padding-bottom: 188px;
 }
 
@@ -167,6 +175,18 @@ a {
 
 
 /* content-section section 2 */
+
+.section-list {
+  display: flex;
+  gap: 24px;
+  padding: 120px 0;
+  width: calc((100% - 72) / 4);
+}
+
+.retreat {
+  margin-bottom: 8px;
+}
+
 .title-benefits {
   font-weight: 500;
   letter-spacing: 0.02em;
@@ -174,6 +194,7 @@ a {
   line-height: 1.5;
   color: #2e2f42;
 }
+
 .benefits-text {
   font-weight: 400;
   font-size: 16px;
@@ -183,12 +204,27 @@ a {
 }
 
 /*our-team 3*/
+.team-title {
+  padding-top: 120px;
+  margin-bottom: 72px;
+}
+
+.section-list-team {
+  display: flex;
+  gap: 24px;
+  padding-bottom: 120px;
+  width: calc((100% - 72px ) / 4);
+}
 .our-team {
   background-color: #F4F4FD ;
 }
+
 .our-team-list {
+  display: block;
+  border-radius: 0 0 4px 4px;
   background-color: #FFFF;
 }
+
 .section-title {
   font-weight: 700;
   font-size: 36px;
@@ -206,6 +242,34 @@ a {
   letter-spacing: 0.02em;
   color: #2e2f42;
 }
+
+.title-retreat {
+  margin-bottom: 8px;
+}
+
+.card-content {
+  padding: 32px 16px;
+  text-align: center;
+}
+
+
+/* section4 Our Portfolio*/
+.our-portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px 48px;
+  width: calc(( 100% - 48px ) / 3);
+  padding-bottom: 120px;
+}
+
+.card-content-project {
+  padding: 32px 16px;
+  border-top: none;
+  border-bottom: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
+}
+
 .profession-team {
   font-weight: 400;
   font-size: 16px;
@@ -222,9 +286,19 @@ a {
   color: #2e2f42;
 }
 
+/* footer */
+
+.footer-cotainer {
+  padding-top:  100px;
+  padding-bottom: 100px;
+}
+
 .footer {
   background-color:  #2E2F42;
+  padding-bottom: 8px;
 }
+
 .footer-copyright {
-  color: #F4F4FD;
+  color: #F4F4FD; 
+  width: 264px;
 }
