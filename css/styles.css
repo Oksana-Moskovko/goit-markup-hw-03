@@ -7,14 +7,67 @@ body {
     letter-spacing: 0.02em;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+  
+.visually-hidden {    
+  position: absolute;
+  width: 1px;  
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 ul, ol {
 	list-style-type: none;
+  margin: 0;
+	padding: 0;
 }
+
 a {
   text-decoration: none;
 }
+.container { 
+  max-width: 1158px;
+  padding-left: 15px; 
+  padding-right: 15px;  
+  margin: 0 auto;
+  }
 
 /*header-nav*/
+
+.header-page {
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
 .logo-link {
   text-transform: uppercase;
   font-family: "Raleway", sans-serif;
@@ -23,9 +76,12 @@ a {
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: #4d5ae5;
-
 }
 
+.header-logo {
+  padding: 24px 0;
+  margin-right: 74px;
+}
 .header-logo .logo-part {
   color: #2e2f42;
 }
@@ -34,6 +90,8 @@ a {
 }
 
 .nav-link {
+  display: block;
+  padding: 24px 0;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -49,10 +107,18 @@ a {
 }
 
 /* address-section*/
+.address-list {
+  display: flex;
+  align-self: center;
+  gap: 40px;
+}
 .address-section {
   font-style: normal;
+  margin-left: auto;
 }
 .address-link {
+  display: block;
+  padding: 24px 0;
   color: #434455;
   font-weight: 400;
   letter-spacing: 0.02em;
@@ -61,7 +127,13 @@ a {
 .main-page {
   background-color: #2E2F42;
 }
-
+ .container-page {
+  padding-top: 188px;
+  padding-bottom: 48px;
+  width: 496px;
+  margin: 0 auto;
+ }
+ 
 .page-title {
   font-weight: 700;
   font-size: 56px;
@@ -80,7 +152,14 @@ a {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #FFFFFF;
+  display: block;
+  margin: 0 auto; 
 }
+
+.button {
+  padding-bottom: 188px;
+}
+
 .btn-primary:hover,
 .btn-primary:focus {
   background-color: #404BBF;
